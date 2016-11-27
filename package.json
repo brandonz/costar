@@ -1,0 +1,34 @@
+{
+  "name": "costar",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "react": "15.3.2",
+    "react-native": "0.36.1",
+    "react-native-accordion": "https://github.com/brandonz/react-native-accordion/archive/master.tar.gz",
+    "react-native-action-button": "^2.0.14",
+    "react-native-lightbox": "^0.6.0",
+    "react-native-loading-spinner-overlay": "^0.3.0",
+    "react-native-material-design": "^0.3.7",
+    "react-native-multiple-choice": "0.0.8",
+    "react-native-scrollable-tab-view": "^0.7.0",
+    "react-native-sortable-list": "0.0.2",
+    "react-native-sortable-listview": "^0.1.1",
+    "react-native-vector-icons": "^3.0.0",
+    "react-native-video": "^0.9.0"
+  },
+  "jest": {
+    "preset": "jest-react-native"
+  },
+  "devDependencies": {
+    "babel-jest": "16.0.0",
+    "babel-preset-react-native": "1.9.0",
+    "jest": "16.0.2",
+    "jest-react-native": "16.1.0",
+    "react-test-renderer": "15.3.2"
+  }
+}

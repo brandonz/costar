@@ -1,0 +1,7 @@
+export default {
+    STANDARD: 'STANDARD',
+    MULTISELECT: 'MULTISELECT',
+    CODE: 'CODE',
+    SORTABLE: 'SORTABLE',
+    TABBED: 'TABBED'
+}
