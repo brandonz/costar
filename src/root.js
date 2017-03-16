@@ -8,7 +8,13 @@ import Quiz from './quiz.js';
 import NavigationBar from './utils/NavigationBar';
 import Scene from './utils/scene';
 
+import OneSignal from 'react-native-onesignal';
+
 const Root = React.createClass({
+    componentDidMount() {
+        OneSignal.configure({});
+    },
+
     renderScene(route, navigator) {
         switch(route.id) {
             case Scene.CONTENT:
@@ -25,7 +31,7 @@ const Root = React.createClass({
             <Navigator
                 ref="navigator"
                 style={{flex: 1}}
-                initialRoute={{id: Scene.HOME, title:'COStar'}}
+                initialRoute={{id: Scene.HOME, title:'COSTAR'}}
                 renderScene={this.renderScene}
                 navigationBar={NavigationBar}
             />

@@ -6,7 +6,7 @@ import {
 const FadeInView = React.createClass({
    getInitialState() {
        return {
-           fadeAnim: new Animated.Value(-64)
+           fadeAnim: new Animated.Value(0.0)
        }
    },
 
@@ -16,14 +16,14 @@ const FadeInView = React.createClass({
         Animated.timing(this.state.fadeAnim, {
             toValue: 1,
             delay: delay,
-            duration: 500
+            duration: 1000
         }).start();
     },
 
     render() {
         return (
             <Animated.View
-                style={{marginLeft: this.state.fadeAnim}}
+                style={{opacity: this.state.fadeAnim}}
             >
                 {this.props.children}
             </Animated.View>

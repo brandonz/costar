@@ -11,6 +11,7 @@ import {
 } from 'react-native-material-design';
 import _ from 'lodash';
 import QuizType from './utils/quizType';
+import Scene from './utils/scene.js';
 import Spinner from 'react-native-loading-spinner-overlay';
 import Icon from 'react-native-vector-icons/Ionicons';
 import {getSample} from './utils/fetcher.js';
@@ -55,7 +56,10 @@ const Quiz = React.createClass({
     },
 
     _enterHome() {
-        this.props.navigator.resetTo({});
+        this.props.navigator.push({
+            id: Scene.HOME
+        });
+        // this.props.navigator.resetTo({});
     },
 
     _changeAnswer(value) {
@@ -125,7 +129,7 @@ const Quiz = React.createClass({
                 body = (<Sortable quiz={quiz} data={sortableData} onAnswerChange={this._changeAnswer} onSubmitAnswer={this._submitQuiz}/>);
                 break;
             case QuizType.TABBED:
-                body = (<Tabbed quiz={quiz}/>);
+                body = (<Tabbed quiz={quiz} submit={this._submitQuiz}/>);
                 break;
             case QuizType.STANDARD:
                 body = (<Standard quiz={quiz} onAnswerChange={this._changeAnswer} onSubmitAnswer={this._submitQuiz}/>);

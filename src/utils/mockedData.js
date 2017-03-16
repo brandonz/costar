@@ -15,7 +15,7 @@ var mockedData = [
                 id: 1,
                 type: Quiz.STANDARD,
                 data: {
-                    question: 'We can compare a variable of type int with a boolean variable?',
+                    question: 'We can compare a variable of type int with a boolean variable.',
                     possibleAnswers: [
                         {
                             id: 1,
@@ -87,7 +87,7 @@ var mockedData = [
                 id: 1,
                 type: Quiz.CODE,
                 data: {
-                    question: 'The following program should add all the number in an int array and print it. Find the bug.',
+                    question: 'The following program should add all the numbers in an int array and print it. Find the bug.',
                     possibleAnswers: [
                         'public static void sumArray(int[] input) {',
                         '          int sum = 0;',
@@ -154,7 +154,198 @@ var mockedData = [
                 data: {
                     question: 'Suppose that a[] is an integer array of length n. Consider this incomplete Java code below. Suppose that you substitute each loop fragment into the rectangle. What effect will it have on the elements in the array a[]?',
                     uri: 'http://i.imgur.com/ns8uRg4.png',
-                    quizzes: []
+                    quizzes: [
+                        {
+                            id: 11,
+                            type: Quiz.STANDARD,
+                            data: {
+                                question: 'for (int i = 0; i < n; i++)',
+                                possibleAnswers: [
+                                    {
+                                        id: 1,
+                                        text: 'puts elements in reverse order'
+                                    },
+                                    {
+                                        id: 2,
+                                        text: 'puts elements in reverse order when n is even'
+                                    },
+                                    {
+                                        id: 3,
+                                        text: 'puts elements in reverse order when n is odd'
+                                    },
+                                    {
+                                        id: 4,
+                                        text: 'keeps elements in original order'
+                                    },
+                                    {
+                                        id: 5,
+                                        text: 'infinite loop'
+                                    },
+                                    {
+                                        id: 6,
+                                        text: 'compile-time error'
+                                    },
+                                    {
+                                        id: 7,
+                                        text: 'run-time error'
+                                    }
+                                ],
+                                correctAnswer: 4
+                            }
+                        },
+                        {
+                            id: 12,
+                            type: Quiz.STANDARD,
+                            data: {
+                                question: 'for (int i = 0; i < n; i++);',
+                                possibleAnswers: [
+                                    {
+                                        id: 1,
+                                        text: 'puts elements in reverse order'
+                                    },
+                                    {
+                                        id: 2,
+                                        text: 'puts elements in reverse order when n is even'
+                                    },
+                                    {
+                                        id: 3,
+                                        text: 'puts elements in reverse order when n is odd'
+                                    },
+                                    {
+                                        id: 4,
+                                        text: 'keeps elements in original order'
+                                    },
+                                    {
+                                        id: 5,
+                                        text: 'infinite loop'
+                                    },
+                                    {
+                                        id: 6,
+                                        text: 'compile-time error'
+                                    },
+                                    {
+                                        id: 7,
+                                        text: 'run-time error'
+                                    }
+                                ],
+                                correctAnswer: 6
+                            }
+                        },
+                        {
+                            id: 13,
+                            type: Quiz.STANDARD,
+                            data: {
+                                question: 'for (int i = 0; i <= n; i++)',
+                                possibleAnswers: [
+                                    {
+                                        id: 1,
+                                        text: 'puts elements in reverse order'
+                                    },
+                                    {
+                                        id: 2,
+                                        text: 'puts elements in reverse order when n is even'
+                                    },
+                                    {
+                                        id: 3,
+                                        text: 'puts elements in reverse order when n is odd'
+                                    },
+                                    {
+                                        id: 4,
+                                        text: 'keeps elements in original order'
+                                    },
+                                    {
+                                        id: 5,
+                                        text: 'infinite loop'
+                                    },
+                                    {
+                                        id: 6,
+                                        text: 'compile-time error'
+                                    },
+                                    {
+                                        id: 7,
+                                        text: 'run-time error'
+                                    }
+                                ],
+                                correctAnswer: 7
+                            }
+                        },
+                        {
+                            id: 14,
+                            type: Quiz.STANDARD,
+                            data: {
+                                question: 'for (int i = 0; i < n/2; i++)',
+                                possibleAnswers: [
+                                    {
+                                        id: 1,
+                                        text: 'puts elements in reverse order'
+                                    },
+                                    {
+                                        id: 2,
+                                        text: 'puts elements in reverse order when n is even'
+                                    },
+                                    {
+                                        id: 3,
+                                        text: 'puts elements in reverse order when n is odd'
+                                    },
+                                    {
+                                        id: 4,
+                                        text: 'keeps elements in original order'
+                                    },
+                                    {
+                                        id: 5,
+                                        text: 'infinite loop'
+                                    },
+                                    {
+                                        id: 6,
+                                        text: 'compile-time error'
+                                    },
+                                    {
+                                        id: 7,
+                                        text: 'run-time error'
+                                    }
+                                ],
+                                correctAnswer: 1
+                            }
+                        },
+                        {
+                            id: 15,
+                            type: Quiz.STANDARD,
+                            data: {
+                                question: 'for (int i = 0; i <=  n/2; i++)',
+                                possibleAnswers: [
+                                    {
+                                        id: 1,
+                                        text: 'puts elements in reverse order'
+                                    },
+                                    {
+                                        id: 2,
+                                        text: 'puts elements in reverse order when n is even'
+                                    },
+                                    {
+                                        id: 3,
+                                        text: 'puts elements in reverse order when n is odd'
+                                    },
+                                    {
+                                        id: 4,
+                                        text: 'keeps elements in original order'
+                                    },
+                                    {
+                                        id: 5,
+                                        text: 'infinite loop'
+                                    },
+                                    {
+                                        id: 6,
+                                        text: 'compile-time error'
+                                    },
+                                    {
+                                        id: 7,
+                                        text: 'run-time error'
+                                    }
+                                ],
+                                correctAnswer: 3
+                            }
+                        }
+                    ]
                 }
             }
         ],
@@ -769,6 +960,628 @@ var mockedData = [
         topic: {
             title: 'Creating Data Types',
             id: 10
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'The challenge',
+        id: 4,
+        topic: {
+            title: 'Performance',
+            id: 11
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Empirical analysis',
+        id: 4,
+        topic: {
+            title: 'Performance',
+            id: 11
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Mathematical models',
+        id: 4,
+        topic: {
+            title: 'Performance',
+            id: 11
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Doubling method',
+        id: 4,
+        topic: {
+            title: 'Performance',
+            id: 11
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Familiar examples',
+        id: 4,
+        topic: {
+            title: 'Performance',
+            id: 11
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'A typical client',
+        id: 4,
+        topic: {
+            title: 'Searching and Sorting',
+            id: 12
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Binary search',
+        id: 4,
+        topic: {
+            title: 'Searching and Sorting',
+            id: 12
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Insertion sort',
+        id: 4,
+        topic: {
+            title: 'Searching and Sorting',
+            id: 12
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Mergesort',
+        id: 4,
+        topic: {
+            title: 'Searching and Sorting',
+            id: 12
+        },
+        content: [
+            {
+                type: Content.WRITTEN,
+                data: {
+                    markup: 'Mergesort: \n\n Divide array into two halves. \n Recursively sort each half. \n Merge two halves to make sorted whole. \n'
+                }
+            },
+            {
+                type: Content.VIDEO,
+                data: {
+                    url: 'https://www.youtube.com/embed/b5E2s3JFkaI?list=PLrNmXMVD0XDTZei01cklYIuL6lcMls01b',
+                    height: 145,
+                    width: 260
+                }
+            },
+            {
+                type: Content.IMAGE,
+                data: {
+                    url: 'http://i.imgur.com/ERuLPsK.png',
+                    height: 185,
+                    width: 270,
+                    text: 'Diagram of mergesort'
+                }
+            },
+            {
+                type: Content.IMAGE,
+                data: {
+                    url: 'http://i.imgur.com/onFRTQZ.png',
+                    height: 185,
+                    width: 270,
+                    text: 'Java implementation'
+                }
+            }
+        ],
+        quiz: [
+            {
+                id: 1,
+                type: Quiz.STANDARD,
+                data: {
+                    question: 'Mergesort was invented by...',
+                    possibleAnswers: [
+                        {
+                            id: 1,
+                            text: 'Alan Turing'
+                        },
+                        {
+                            id: 2,
+                            text: 'John von Neumann'
+                        },
+                        {
+                            id: 3,
+                            text: 'Tony Hoare'
+                        },
+                        {
+                            id: 4,
+                            text: 'Donald Knuth'
+                        },
+                        {
+                            id: 5,
+                            text: 'Robert Sedgewick'
+                        }
+                    ],
+                    correctAnswer: 2
+                }
+            },
+            {
+                id: 1,
+                type: Quiz.MULTISELECT,
+                data: {
+                    question: 'Select the following that are properties of mergesort',
+                    possibleAnswers: [
+                        {
+                            id: 1,
+                            text: 'in place sorting'
+                        },
+                        {
+                            id: 2,
+                            text: 'faster time complexity than selection sort'
+                        },
+                        {
+                            id: 3,
+                            text: 'linear time guarantee'
+                        },
+                        {
+                            id: 4,
+                            text: 'requires an auxiliary array'
+                        },
+                        {
+                            id: 5,
+                            text: 'stable sort'
+                        }
+                    ],
+                    correctAnswer: [1, 2, 4, 5]
+                }
+            }
+        ],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'APIs',
+        id: 4,
+        topic: {
+            title: 'Stacks and Queues',
+            id: 13
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Clients',
+        id: 4,
+        topic: {
+            title: 'Stacks and Queues',
+            id: 13
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Strawman implementation',
+        id: 4,
+        topic: {
+            title: 'Stacks and Queues',
+            id: 13
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Linked lists',
+        id: 4,
+        topic: {
+            title: 'Stacks and Queues',
+            id: 13
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Implementations',
+        id: 4,
+        topic: {
+            title: 'Stacks and Queues',
+            id: 13
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'APIs and clients',
+        id: 4,
+        topic: {
+            title: 'Symbol Tables',
+            id: 14
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'A design challenge',
+        id: 4,
+        topic: {
+            title: 'Symbol Tables',
+            id: 14
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Binary search trees',
+        id: 4,
+        topic: {
+            title: 'Symbol Tables',
+            id: 14
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Implementations',
+        id: 4,
+        topic: {
+            title: 'Symbol Tables',
+            id: 14
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Analysis',
+        id: 4,
+        topic: {
+            title: 'Symbol Tables',
+            id: 14
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Overview',
+        id: 4,
+        topic: {
+            title: 'Intro to Theoretical CS',
+            id: 15
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Regular expessions',
+        id: 4,
+        topic: {
+            title: 'Intro to Theoretical CS',
+            id: 15
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'DFAs',
+        id: 4,
+        topic: {
+            title: 'Intro to Theoretical CS',
+            id: 15
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Applications',
+        id: 4,
+        topic: {
+            title: 'Intro to Theoretical CS',
+            id: 15
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Limitations',
+        id: 4,
+        topic: {
+            title: 'Intro to Theoretical CS',
+            id: 15
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Context',
+        id: 4,
+        topic: {
+            title: 'Turing Machines',
+            id: 16
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'A simple model of computation',
+        id: 4,
+        topic: {
+            title: 'Turing Machines',
+            id: 16
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Universality',
+        id: 4,
+        topic: {
+            title: 'Turing Machines',
+            id: 16
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Computability',
+        id: 4,
+        topic: {
+            title: 'Turing Machines',
+            id: 16
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Implications',
+        id: 4,
+        topic: {
+            title: 'Turing Machines',
+            id: 16
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Reasonable questions',
+        id: 4,
+        topic: {
+            title: 'Intractability',
+            id: 17
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'P and NP',
+        id: 4,
+        topic: {
+            title: 'Intractability',
+            id: 17
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Poly-time reductions',
+        id: 4,
+        topic: {
+            title: 'Intractability',
+            id: 17
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'NP-completeness',
+        id: 4,
+        topic: {
+            title: 'Intractability',
+            id: 17
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Living with intractability',
+        id: 4,
+        topic: {
+            title: 'Intractability',
+            id: 17
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Building blocks',
+        id: 4,
+        topic: {
+            title: 'Combinational Circuits',
+            id: 18
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Boolean algebra',
+        id: 4,
+        topic: {
+            title: 'Combinational Circuits',
+            id: 18
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Digital circuits',
+        id: 4,
+        topic: {
+            title: 'Combinational Circuits',
+            id: 18
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Adder circuit',
+        id: 4,
+        topic: {
+            title: 'Combinational Circuits',
+            id: 18
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Arithmetic/logic unit',
+        id: 4,
+        topic: {
+            title: 'Combinational Circuits',
+            id: 18
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Overview',
+        id: 4,
+        topic: {
+            title: 'Central Processing Unit',
+            id: 19
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Bits, registers, and memory',
+        id: 4,
+        topic: {
+            title: 'Central Processing Unit',
+            id: 19
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Program counter',
+        id: 4,
+        topic: {
+            title: 'Central Processing Unit',
+            id: 19
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Components, connections, and control',
+        id: 4,
+        topic: {
+            title: 'Central Processing Unit',
+            id: 19
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Popular languages',
+        id: 4,
+        topic: {
+            title: 'Programming Languages',
+            id: 20
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Java in context',
+        id: 4,
+        topic: {
+            title: 'Programming Languages',
+            id: 20
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Object-oriented programming',
+        id: 4,
+        topic: {
+            title: 'Programming Languages',
+            id: 20
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Type checking',
+        id: 4,
+        topic: {
+            title: 'Programming Languages',
+            id: 20
+        },
+        content: [],
+        quiz: [],
+        dataOfRelease: 12312515
+    },
+    {
+        title: 'Functional programming',
+        id: 4,
+        topic: {
+            title: 'Programming Languages',
+            id: 20
         },
         content: [],
         quiz: [],

@@ -26,7 +26,7 @@ import styles from './styles/home.js';
 
 import mockedData from './utils/mockedData';
 
-const headerImage = require('./images/header3.png');
+const headerImage = require('./images/header4.png');
 const HEADER_HEIGHT = 150;
 const NAVBAR_HEIGHT = 50;
 

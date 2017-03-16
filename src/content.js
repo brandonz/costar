@@ -47,13 +47,14 @@ export default React.createClass({
                 <Card.Body>
                     <Lightbox>
                         <Image
-                            style={{height: data.height, width: data.width}}
+                            resizeMode="contain"
+                            style={{height: data.height}}
                             source={{ uri: data.url }}
                         />
                     </Lightbox>
                 </Card.Body>
                 <Card.Body>
-                    <Text>{'This is a sample image of mergesort.'}</Text>
+                    <Text>{data.text}</Text>
                 </Card.Body>
             </Card>
         );

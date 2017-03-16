@@ -15,6 +15,7 @@
     "react-native-loading-spinner-overlay": "^0.3.0",
     "react-native-material-design": "^0.3.7",
     "react-native-multiple-choice": "0.0.8",
+    "react-native-onesignal": "^1.2.3",
     "react-native-scrollable-tab-view": "^0.7.0",
     "react-native-sortable-list": "0.0.2",
     "react-native-sortable-listview": "^0.1.1",
